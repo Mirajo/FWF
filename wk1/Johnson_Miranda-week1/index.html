@@ -15,10 +15,15 @@
 </head>
 <body ng-app>
 <h1>Grocery List </h1>
-<p>Use the list below to add and remove items to the list.</p>
+<p>Add and remove items to create your grocery list below.</p>
 <div ng-controller="DBController">
     <input type="text" ng-model="listName"/>
+     <input type="submit" ng-click="addName()"/>
     <p>Items needed: {{listName}}</p>
+    <ol>
+        <li ng-repeat="name in listArray">{{name}}
+        <button ng-click="deleteName(name)">X</button></li>
+    </ol>
 </div>
 
 

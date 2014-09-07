@@ -2,8 +2,6 @@
 
 
 body{
-    margin-right: 0;
-    margin-left: 0;
     background-color: #F9F9F9;
 }
 h1 {
@@ -11,11 +9,18 @@ h1 {
 
 }
 .ng-scope {
-    border-radius: 10px;
-    border: 5px solid #ffffff;
-
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+}
+.ng-binding {
+    border: 0px;
 }
 
-ol li {
+ol {
     list-stle-type: decimal;
+    background-color: #ffffff;
+    width: 200px;
 }
