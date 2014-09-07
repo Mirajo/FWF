@@ -4,7 +4,7 @@
 body{
     margin-right: 0;
     margin-left: 0;
-    background-color: #ededed;
+    background-color: #F9F9F9;
 }
 h1 {
     background-color: #ffffff;
@@ -18,5 +18,4 @@ h1 {
 
 ol li {
     list-stle-type: decimal;
-
 }

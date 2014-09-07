@@ -6,5 +6,5 @@
 
 function DBController($scope){
 
-     $scope.userName;
+     $scope.listName;
  }
