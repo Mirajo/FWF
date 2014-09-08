@@ -2,11 +2,11 @@
  * Created by mirajo on 9/8/14.
  */
 
-var myNameSpace = angular.module('myApp',[]);
+var myApp = angular.module('myApp',[]);
 
-myNameSpace.controller('MyController',
+myApp.controller('MyController',
 function MyController($scope) {
-    $scope.artist = [
+    $scope.artists = [
         {
             "name":"Barot Bellingham",
             "shortname":"Barot_Bellingham",
