@@ -1,7 +1,8 @@
-/**
- * Created by mirajo on 9/8/14.
+/*
+Lynda.com ~ Angular ~ practice
+ Author: Miranda Johnson
+ FWF
  */
-
 var myApp = angular.module('myApp',[]);
 
 myApp.controller('MyController', ['$scope','$http',
