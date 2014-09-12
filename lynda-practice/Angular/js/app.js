@@ -1,6 +1,6 @@
  /**
  * Miranda Johnson
-  * Lynda.com ~ practice
+  * Lynda.com ~ Angular~ practice
  */
 
 var myApp = angular.module('myApp', [
