@@ -14,11 +14,11 @@ function($scope, $http) {
        });
 }]);
 
-artistControllers.controller('ListController', ['$scope','$http',
-    function($scope, $http) {
+artistControllers.controller('DetailsController', ['$scope','$http','$routeParams',
+    function($scope, $http, $routeParams) {
         $http.get('js/data.json').success(function(data){
             $scope.artists = data;
-            $scope.artistOrder = 'name';
+            $scope.whichItem = $routeParams.temid;
 
         });
     }]);
