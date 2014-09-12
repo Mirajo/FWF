@@ -18,7 +18,7 @@ artistControllers.controller('DetailsController', ['$scope','$http','$routeParam
     function($scope, $http, $routeParams) {
         $http.get('js/data.json').success(function(data){
             $scope.artists = data;
-            $scope.whichItem = $routeParams.temid;
+            $scope.whichItem = $routeParams.itemId;
 
         });
     }]);

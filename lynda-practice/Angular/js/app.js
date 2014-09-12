@@ -14,7 +14,7 @@ var myApp = angular.module('myApp', [
          templateUrl: 'lib/partials/list.html',
          controller: 'ListController'
      }).
-     when('/details/:itemid', {
+     when('/details/:itemId', {
          templateUrl: 'lib/partials/details.html',
          controller: 'DetailsController'
      }).
