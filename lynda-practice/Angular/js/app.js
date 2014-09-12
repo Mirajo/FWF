@@ -14,6 +14,9 @@ var myApp = angular.module('myApp', [
          templateUrl: 'lib/partials/list.html',
          controller: 'ListController'
      }).
+     when('/details/:itemid', {
+
+     })
      otherwise({
      redirectTo: '/list'
 
