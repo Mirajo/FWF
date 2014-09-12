@@ -35,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../lynda-practice/Angular/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32786885" vertical-offset="0" max-vertical-offset="732">
+            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="330">
               <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
               <folding />
             </state>
@@ -87,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../lynda-practice/Angular/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.09920635" vertical-offset="0" max-vertical-offset="756">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -123,10 +123,10 @@
         <option value="$PROJECT_DIR$/../../lynda-practice/Angular/list.html" />
         <option value="$PROJECT_DIR$/../../lynda-practice/Angular/lib/partials/list.html" />
         <option value="$PROJECT_DIR$/../../lynda-practice/Angular/js/app.js" />
-        <option value="$PROJECT_DIR$/../../lynda-practice/Angular/js/controllers.js" />
         <option value="$PROJECT_DIR$/../../lynda-practice/Angular/lib/partials/details.html" />
         <option value="$PROJECT_DIR$/../../lynda-practice/Angular/css/style.css" />
         <option value="$PROJECT_DIR$/../../lynda-practice/Angular/index.html" />
+        <option value="$PROJECT_DIR$/../../lynda-practice/Angular/js/controllers.js" />
       </list>
     </option>
   </component>
@@ -432,16 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../lynda-practice/Angular/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../lynda-practice/Angular/lib/partials/details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
@@ -460,9 +450,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../lynda-practice/Angular/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32786885" vertical-offset="0" max-vertical-offset="732">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="330">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../lynda-practice/Angular/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09920635" vertical-offset="0" max-vertical-offset="756">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

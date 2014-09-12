@@ -3,7 +3,7 @@ Lynda.com ~ Angular ~ practice
  Author: Miranda Johnson
  FWF
  */
-var artistControllers = angular.module('artistControllers',[]);
+var artistControllers = angular.module('artistControllers',['ngAnimate']);
 
 artistControllers.controller('ListController', ['$scope','$http',
 function($scope, $http) {
