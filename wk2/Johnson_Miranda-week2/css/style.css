@@ -1,0 +1,65 @@
+/*
+* Miranda Johnson
+* FWF Week 2
+*/
+
+body{
+    background-color: #F9F9F9;
+}
+h1 {
+    background-color: #ffffff;
+
+}
+.ng-scope {
+    border-radius: 2px;
+    border: 1px solid #b8b8b8;
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+}
+.ng-binding {
+    border: 0px;
+    width:100%;
+    background-color: #ffffff;
+}
+
+ol {
+    list-stle-type: decimal;
+    background-color: #ffffff;
+    width: 200px;
+}
+.empCon {
+    border-radius: 1px;
+    border: 3px solid #000000;
+    background-color: #F9F9F9;
+
+}
+input{
+    border:1px solid #767676);
+    margin: 3px;
+    height: 10px;
+    box-shadow:0 0 0.6em rgba(0, 0, 0, 0.6) inset;
+}
+
+.form {
+    border-radius: 2px;
+    border: 1px solid #b8b8b8;
+    /* max-width: 50%; */
+    float: left;
+
+}
+.dir {
+    border-radius: 2px;
+   /* max-width: 50%; */
+    float: left;
+}
+
+hr {
+    clear: both;
+
+}
+footer {
+    text-align: center;
+    clear: both;
+
+}

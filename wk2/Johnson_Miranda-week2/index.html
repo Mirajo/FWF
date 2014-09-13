@@ -1,0 +1,66 @@
+<!--
+* Miranda Johnson
+* FWF Week 2
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FWF Week 2 || Johnson, Miranda </title>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <!--<script type="text/javascript" src="js/controllers.js"></script> -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body ng-app="employDir">
+<div class="empCon" ng-controller="employCon">
+<h1>Employee Directory </h1>
+<p>Manage your employee directory below.</p>
+<hr>
+<div class="form" ng-controller="employCon">
+    <h2>Add Employee</h2>
+    <label> Employee:</label>
+    <br>
+    <input type="text" ng-model="emp.name"/>
+    <br>
+    <label> Street:</label>
+    <br>
+    <input type="text" ng-model="emp.address"/>
+    <br>
+    <label> City:</label>
+    <br>
+    <input type="text" ng-model="emp.city"/>
+    <br>
+    <label> State:</label>
+    <br>
+    <input type="text" ng-model="emp.state"/>
+    <br>
+    <label> Zip Code:</label>
+    <br>
+    <input type="text" ng-model="emp.zip"/>
+    <br>
+    <input type="submit" ng-click="addName(newEmp)"/>
+    <br>
+</div>
+    <br>
+<div class="dir">
+    <h2>Delete Employee</h2>
+    <div id="empList">
+        <ol>
+            <li ng-repeat="emp in Employees track by $index">
+                {{emp.name }}
+                {{emp.address}}
+                {{emp.city}},
+                {{emp.state}}
+                {{emp.zip}}
+                <button ng-click="deleteEmp($index)">x</button>
+            </li>
+        </ol>
+    </div>
+    </div>
+<hr>
+   <footer> Employee Directory ~ Angular.js ~ Assignment ~ </footer>
+</body>
+</html>
