@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body ng-app="employDir">
-<div class="empCon" ng-controller="employCon">
+<div class="empCon" ng-controller="employController">
 <h1>Employee Directory </h1>
 <p>Manage your employee directory below.</p>
 <hr>
-<div class="form" ng-controller="employCon">
+<div class="form">
     <h2>Add Employee</h2>
     <label> Employee:</label>
     <br>
@@ -41,16 +41,29 @@
     <br>
     <input type="text" ng-model="emp.zip"/>
     <br>
-    <input type="submit" ng-click="addName(newEmp)"/>
+    <input type="submit" value="add employee" ng-click="newEmp(emp.name)"/>
     <br>
 </div>
-    <br>
-<div class="dir">
+  <br>
+    <div id="empAdded" class="empAdded" ng-controller="employController">
+        <h4>New Employee Submitted:</h4>
+        {{emp.name}}
+        {{emp.address}}
+        {{emp.city}}
+        {{emp.state}}
+        {{emp.zip}}
+    </div>
+  </br>
+<div id="dir" class="dir" ng-controller="employController">
     <h2>Delete Employee</h2>
+    <p><label>Search Directory: </label><input type="text" ng-model="searchText" /></p>
+
+    {{searchText}}
+
     <div id="empList">
         <ol>
-            <li ng-repeat="emp in Employees track by $index">
-                {{emp.name }}
+            <li ng-repeat="emp in employees track by $index | filter:searchText">
+                {{emp.name}}
                 {{emp.address}}
                 {{emp.city}},
                 {{emp.state}}
@@ -59,7 +72,7 @@
             </li>
         </ol>
     </div>
-    </div>
+  </div>
 <hr>
    <footer> Employee Directory ~ Angular.js ~ Assignment ~ </footer>
 </body>

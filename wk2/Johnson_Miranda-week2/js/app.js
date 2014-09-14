@@ -3,16 +3,19 @@
   * FWF Week 1
  */
 
- angular.module("employDir",[]).controller("employCon",function($scope, dataService) {
-     $scope.employees = dataService.getInfo();
+ var app = angular.module('employDir',[]);
+  app.controller('employController',function($scope, data) {
+
+     $scope.employees = data.getInfo();
+
      $scope.newEmp = function() {
-         dataService.newEmp($scope.addEmployee);
+         data.newEmp($scope.emp);
 
-         $scope.addEmployee = " ";
+         $scope.emp = " ";
 
-     }
+     };
      $scope.deleteEmp = function($index){
-        dataService.removeEmp($index);
+        data.removeEmp($index);
 
      }
 

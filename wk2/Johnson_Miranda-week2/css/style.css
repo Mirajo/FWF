@@ -35,23 +35,34 @@ ol {
 
 }
 input{
-    border:1px solid #767676);
-    margin: 3px;
-    height: 10px;
+    border:1px solid #767676;
+    margin: 5px;
+    height: 20px;
+    width:  300px;
     box-shadow:0 0 0.6em rgba(0, 0, 0, 0.6) inset;
 }
 
 .form {
     border-radius: 2px;
     border: 1px solid #b8b8b8;
-    /* max-width: 50%; */
+    max-width: 50%;
+
+}
+#empAdded {
+    background-color: #FF0000;
+    max-width: 100%;
     float: left;
 
 }
-.dir {
+#dir {
     border-radius: 2px;
-   /* max-width: 50%; */
+    max-width: 50%;
     float: left;
+}
+#empList {
+    border-radius: 60px;
+    max-width: 50%;
+    background-color: #767676;
 }
 
 hr {
@@ -61,5 +72,6 @@ hr {
 footer {
     text-align: center;
     clear: both;
+    background-color: #ffffff;
 
 }
