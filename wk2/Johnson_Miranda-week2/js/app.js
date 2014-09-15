@@ -6,12 +6,12 @@
  var app = angular.module('employDir',[]);
   app.controller('employController',function($scope, data) {
 
-     $scope.employees = data.getInfo();
+     $scope.employees = data.getEmp();
 
      $scope.newEmp = function() {
          data.newEmp($scope.emp);
 
-         $scope.emp = " ";
+         $scope.emp = " "
 
      };
      $scope.deleteEmp = function($index){
@@ -20,3 +20,5 @@
      }
 
  });
+
+ //app.controller()
