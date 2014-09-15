@@ -5,35 +5,40 @@
 
 var employDir = angular.module('employDir',[]);
 
-    employDir.controller('employController', function($scope) {
+employDir.controller('employController', function($scope) {
 
-        $scope.employees = [
+ $scope.employees =   [
             {name: "Miranda Johnson", address: "90210 N. Wiseria Lane, Apt. A", city: "HollyWood", state: "CA", zip: "90210"},
             {name: "Jackie Chan", address: "90210 N. Wiseria Lane, Apt. B", city: "HollyWood", state: "CA", zip: "90210"},
             {name: "Vanessa Willams", address: "90210 N. Wiseria Lane, Apt. C", city: "HollyWood", state: "CA", zip: "90210"}
-        ];
+ ];
 
         $scope.addEmp = function() {
 
-            $scope.employees.push($scope.newEmp);
+         $scope.employees.push($scope.newEmp);
+         $scope.newEmp = '';
         };
 
-        this.getEmp = function () {
-            var info = localStorage.getItem("EmpStorage");
-            employees= JSON.parse(info) || employees;
-            return employees;
+        $scope.deleteEmp = function(emp) {
+           var index = $scope.employees.indexOf(emp);
+           $scope.employees.splice(index, 1);
         };
 
-        this.newEmp = function (newItem) {
-            employees.push(newItem);
-            var info = JSON.stringify(employees);
-            localStorage.setItem("EmpStorage", info);
-        };
+        //$scope.getEmp = function (emp) {
+        //    var info = localStorage.getItem("EmpStorage");
+        //    employees = JSON.parse(info) || employees;
+        //    return employees;
+        //};
 
-        this.removeEmp = function (newItem) {
-            employees.splice(newItem, 1);
-            var info = JSON.stringify(employees);
-            localStorage.setItem("EmpStorage", info);
+        //$scope.newEmp = function (emp) {
+        //    employees.push(newEmp);
+        //    var info = JSON.stringify(employees);
+        //    localStorage.setItem("EmpStorage", info);
+        //};
 
-        };
+        //$scope.removeEmp = function (newItem) {
+        //    employees.splice(newItem, 1);
+        //    var info = JSON.stringify(employees);
+        //    localStorage.setItem("EmpStorage", info);
+
     });

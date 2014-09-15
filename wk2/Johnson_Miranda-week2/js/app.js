@@ -3,21 +3,26 @@
   * FWF Week 1
  */
 
- var app = angular.module('employDir',[]);
-  app.controller('employController',function($scope, data) {
+var employDir = angular.module('employDir',[]);
 
-     $scope.employees = data.getEmp();
+ employDir.controller('employController', ['$scope', '$http', function (scope, http) {
+ http.get('employees.json').success(function(data){
+ scope.employees = data;
 
-     $scope.newEmp = function() {
-         data.newEmp($scope.emp);
 
-         $scope.emp = " "
+
+
+ //var app = angular.module('employDir',[]);
+ //    app.controller('employController',function($scope, data) {
+
+//     $scope.employees = data.getEmp();
+
+//     $scope.newEmp = function() {
+//         data.newEmp($scope.addEmp);
+
+//         $scope.addEmp = ' ';
 
      };
-     $scope.deleteEmp = function($index){
-        data.removeEmp($index);
-
-     }
 
  });
 
