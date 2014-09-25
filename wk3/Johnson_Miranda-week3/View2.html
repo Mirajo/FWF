@@ -1,0 +1,18 @@
+<!--* Miranda Johnson* FWF Week 3 ~ Routing Practice-->
+
+<h1>View 2</h1>
+<p>This is view 2</p>
+<h2>New Employees</h2>
+<div id="empAdded" class="empAdded" ng-repeat="newEmp in employees track by $index">
+    <h4>Submitted:</h4>
+    <ol>
+        <li>
+            {{newEmp.name}}
+            {{newEmp.address}}
+            {{newEmp.city}},
+            {{newEmp.state}}
+            {{newEmp.zip}}
+        </li>
+    </ol>
+    <br>
+</div>

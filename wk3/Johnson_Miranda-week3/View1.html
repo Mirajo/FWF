@@ -1,0 +1,38 @@
+<!--* Miranda Johnson* FWF Week 3 ~ Routing Practice-->
+
+
+<h1>View 1 </h1>
+<p>This is view one</p>
+
+<div ng-controller="employController" class="empCon">
+    <h1>Employee Directory </h1>
+    <p>Manage your employee directory below.</p>
+    <hr>
+    <div class="form">
+        <form ng-submit="addEmp()">
+            <h2>Add Employee</h2>
+            <label> Employee:</label>
+            <br>
+            <input type="text" ng-model="newEmp.name"/>
+            <br>
+            <label> Street:</label>
+            <br>
+            <input type="text" ng-model="newEmp.address"/>
+            <br>
+            <label> City:</label>
+            <br>
+            <input type="text" ng-model="newEmp.city"/>
+            <br>
+            <label> State:</label>
+            <br>
+            <input type="text" ng-model="newEmp.state"/>
+            <br>
+            <label> Zip Code:</label>
+            <br>
+            <input type="text" ng-model="newEmp.zip"/>
+            <br>
+            <input type="submit" value="add employee" ng-click="newEmp"/>
+        </form>
+        <br>
+    </div>
+  </div>

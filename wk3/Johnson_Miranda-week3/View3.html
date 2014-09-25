@@ -1,0 +1,26 @@
+<!--* Miranda Johnson* FWF Week 3 ~ Routing Practice-->
+
+<h1>View 3</h1>
+<p>This is view 3</p>
+<div  id="dir" class="dir" ng-controller="employController">
+    <h2>Employees</h2>
+    <p><label>Search Directory: </label><input type="text" ng-model="query"/></p>
+
+    {{searchText}}
+
+    <div id="empList">
+        <ol>
+            <li ng-repeat="emp in employees |filter: query">
+                {{emp.name}}
+                {{emp.address}}
+                {{emp.city}},
+                {{emp.state}}
+                {{emp.zip}}
+                <button ng-click="deleteEmp(emp)">x</button>
+
+            </li>
+        </ol>
+    </div>
+</div>
+
+

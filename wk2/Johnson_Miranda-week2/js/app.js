@@ -1,29 +1,45 @@
- /**
- * Miranda Johnson
-  * FWF Week 1
- */
-
-var employDir = angular.module('employDir',[]);
-
- employDir.controller('employController', ['$scope', '$http', function (scope, http) {
- http.get('employees.json').success(function(data){
- scope.employees = data;
+<!--* Miranda Johnson* FWF Week 2 (setting local storage)-->
 
 
+ angular.module("employDir",[]).controller("employController", function($scope) {
+
+     $scope.emp;
+
+     $scope.employees = [
+         {name: "Miranda Johnson", address: "90210 N. Wiseria Lane, Apt. A", city: "HollyWood", state: "CA", zip: "90210"},
+         {name: "Jackie Chan", address: "90210 N. Wiseria Lane, Apt. B", city: "HollyWood", state: "CA", zip: "90210"},
+         {name: "Vanessa Williams", address: "90210 N. Wiseria Lane, Apt. C", city: "HollyWood", state: "CA", zip: "90210"}
+     ];
 
 
- //var app = angular.module('employDir',[]);
- //    app.controller('employController',function($scope, data) {
+     $scope.addEmp = function () {
 
-//     $scope.employees = data.getEmp();
-
-//     $scope.newEmp = function() {
-//         data.newEmp($scope.addEmp);
-
-//         $scope.addEmp = ' ';
+         $scope.employees.push($scope.newEmp);
+         $scope.newEmp = '';
 
      };
 
+
+     $scope.deleteEmp = function(deletedEmp) {
+         var index = $scope.employees.indexOf(deletedEmp);
+         $scope.employees.splice(index, 1);
+
+     };
  });
 
- //app.controller()
+
+
+//var employDir = angular.module('employDir',[]);
+
+// employDir.controller('employController', ['$scope', '$http', function (scope, http) {
+// http.get('employees.json').success(function(data){
+// scope.employees = data;
+
+
+//     };
+
+// });
+
+
+
+
