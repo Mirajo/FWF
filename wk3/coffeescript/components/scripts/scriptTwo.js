@@ -1,3 +1,4 @@
 /**
- * Created by mirajo on 9/29/14.
- */
+ * Miranda Johnson
+ * FWF ~ Coffescript
+ * /
