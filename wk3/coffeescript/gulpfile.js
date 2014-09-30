@@ -13,8 +13,8 @@ var coffeeSources = [
 ];
 
 var jsSources = [
-  'components/scripts/scriptOne.js',
-  'components/scripts/scriptTwo.js'
+  ,'components/lib/jquery/jquery.js',
+  'components/scripts/*.js'
 ];
 
 var sassSources = [
