@@ -12,6 +12,7 @@
     <orderEntry type="library" name="foundation-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="jasmine-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="gulp-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="coffeescript node_modules" level="project" />
   </component>
 </module>
 
